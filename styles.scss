@@ -1,11 +1,11 @@
 @use 'variables' as *;
-@use 'atoms'; 
+@use 'atoms' as *; 
 @use 'molecules';
 @use 'organisms';
 
 html {
     background-color: $background-color;
-    padding: 6%;
+    @include center(100%);
 }
 
 body {
@@ -19,7 +19,6 @@ main > h2 {
     letter-spacing: 1px;
     line-height: 1em;
     padding: 5%;
-    text-align: center;
   }
 
 .fonts,
