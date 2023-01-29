@@ -13,13 +13,20 @@ body {
 }
 
 
-h2 {
+main > h2 {
     font-weight: 900; /* Heavy */
-    font-size: 5em;
+    font-size: 3em;
     letter-spacing: 1px;
     line-height: 1em;
     padding: 5%;
     text-align: center;
+  }
+
+.fonts,
+.colors,
+.headers,
+.paragraphs {
+    font-size: 1.3em;
   }
 
 .design {
@@ -29,7 +36,7 @@ h2 {
     color: $text-light;
     grid-template-columns: 1fr 2fr;
     display: grid;
-    grid-gap: 3em;
+    grid-column-gap: 3em;
 }
 
 .fonts > h4:nth-of-type(1), .fonts > p:nth-of-type(1) {
@@ -39,12 +46,10 @@ h2 {
 .fonts {
     grid-column: 1/2;
     font-family: $font-headline;
-    font-size: 1.3em;
 }
 
 .colors {
     grid-column: 2/3;
-    font-size: 1.3em;
 }
 
 .swatch {
@@ -71,20 +76,11 @@ h2 {
 .headers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2em;
+    grid-column-gap: 2em;
 }
 
 .headers > h1 {
     font-size: large;
-}
-
-.element2 > h2 {
-    font-size: 1.5em;
-}
-
-.element3 > h3 {
-    font-size: 1.3em;
-    padding: 0.5em;
 }
 
 .element1 {
@@ -97,4 +93,21 @@ h2 {
 
 .element3 {
     grid-column: 3/4;
+}
+
+.paragraphs {
+    padding-top: 2em;
+}
+
+.paragraphs > .element {
+    padding-left: 2em;
+}
+
+.element > .uppercase, .element > .uppercase-light {
+    text-transform: uppercase;
+}
+
+.element > .uppercase-light{
+    padding: 2em;
+    color: $text-light;
 }
