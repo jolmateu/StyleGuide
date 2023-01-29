@@ -89,6 +89,7 @@ main > h2 {
 .fonts {
   grid-column: 1/2;
   font-family: "Bubblegum Sans", sans-serif;
+  letter-spacing: 1px;
 }
 
 .colors {

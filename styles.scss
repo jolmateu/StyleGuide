@@ -45,6 +45,7 @@ main > h2 {
 .fonts {
     grid-column: 1/2;
     font-family: $font-headline;
+    letter-spacing: 1px;
 }
 
 .colors {
